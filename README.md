@@ -1,2 +1,3 @@
 # e-Receipt
-e-Receipt template for OPS-MNRE. This is just a prototype, and has not yet been approved by any governmental organizaions.
+[e-Receipt](https://kietpawpan.github.io/e-Receipt/e-Receipt.html
+) template for OPS-MNRE. This is just a prototype, and has not yet been approved by any governmental organizaions. 
