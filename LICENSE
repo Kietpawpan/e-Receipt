@@ -1,6 +1,10 @@
-MIT License
+The code in this repository is modified from Ozu Escobar's e-ticket code at https://codepen.io/jozu-escobar/pen/KKwmJxB, which is licensed under Codepen's Terms of Service, as stated at https://blog.codepen.io/documentation/terms-of-service/
 
-Copyright (c) 2023 jTech
+Krut image is taken from https://commons.wikimedia.org/wiki/File:Thai_government_Garuda_emblem_(Version_2).svg, which is now in the public domain in Thailand because its term of copyright has expired.  
+
+Aside from the above, the license for all OTHER content in this repo is as follows: 
+
+Copyright (c) 2023 Monte Kietpawpan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
