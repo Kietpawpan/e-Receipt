@@ -203,5 +203,5 @@ function sum() {
 
 }
 
-window.onload=sum();
+document.addEventListener("DOMContentLoaded", sum);
 
