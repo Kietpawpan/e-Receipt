@@ -199,7 +199,9 @@ function sum() {
 		nameNuoi + bathUnit + nameSipSatang + nameNuoiSatang + satangUnit + ")";
 
 	document.getElementById("equity").innerHTML = equity;
-
+	
+	alert('รวม ' + total + ' บาท ' + "(" + namePanLan + nameRoiLan + nameSipLan + nameLan + nameSaen + nameMuen + namePan + nameRoi + nameSip + 
+		nameNuoi + bathUnit + nameSipSatang + nameNuoiSatang + satangUnit + ")" + ' แต้มสะสม ' + equity);
 
 }
 
