@@ -200,6 +200,8 @@ function sum() {
 
 	document.getElementById("equity").innerHTML = equity;
 
-	
+
 }
+
+window.onload=sum();
 
