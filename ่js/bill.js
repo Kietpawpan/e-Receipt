@@ -1,6 +1,6 @@
 /* Copyright © 2023 Montri Kiatphaophan
- * baht.js | All rights reserved. 
- * May 30, 2023
+ * bill.js | All rights reserved. 
+ * June, 2023
  */
 
 function sum() {
