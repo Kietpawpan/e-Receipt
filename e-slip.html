@@ -2,16 +2,16 @@
 <head>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="sum()">
 
 <div id="showScroll" class="container">
 	<div class="receipt"><div class="logo">
-เล่มที่ xxx
+เล่มที่ xx
 		&nbsp;&nbsp;&nbsp;<!img src="img/krut.png" style="max-width:70px;max-height: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 
-เลขที่ xxx</div>
+เลขที่ xxxx</div>
 		<div class="address">
-(ตัวอย่าง) ใบเสร็จรับเงินอิเล็กทรอนิกส์<br>
+ตัวอย่างใบเสร็จรับเงินอิเล็กทรอนิกส์<br>
  		</div>
 		<div class="transactionDetails" style="display:none;">
 			<div class="detail">Reg#17</div>
@@ -20,11 +20,11 @@
 			<div class="detail">str#9852</div>
 		</div>
 		<div class="transactionDetails">
-			วันที่ 19 มิถุนายน 2566<br>ได้รับเงินจาก: 
+			วันที่ 20 มิถุนายน 2566<br>ได้รับเงินจาก: 
 		</div>
 		<div class="centerItem bold">
 			<div class="item">
-ชื่อผู้รับบริการ: </div>
+เจ แคปปิตอล: </div>
 		</div>
 		<div class="transactionDetails">
 			<div class="detail"></div>
@@ -38,8 +38,8 @@
 		</div>
 		
 		<div class="transactionDetails">
-			<div class="detail">ทรู มิ.ย. 2566</div>
-			<div class="detail" id='i1' value='6106'>6,106</div>
+			<div class="detail">เครือข่ายทรู มิ.ย. 66</div>
+			<div class="detail" id='i1' type='text' value='6106'>6,106</div>
 		</div>
 
 		<div class="transactionDetails">
@@ -48,8 +48,25 @@
 		</div>
 
 		<div class="transactionDetails">
+			<div class="detail">สแตนเลส งวด 1</div>
+			<div class="detail" id='i3'>24,100</div>
+		</div>
+
+<!--
+		<div class="transactionDetails">
+			<div class="detail">สแตนเลส งวด 2</div>
+			<div class="detail" id='i3'>24,100</div>
+		</div>
+-->
+		<div class="transactionDetails">
 			<div class="detail"><b>รวม</div>
-			<div class="detail" id='to'>6,606</div></b>
+			<div class="detail" id='total'></div></b>
+
+		</div>
+
+		<div class="transactionDetails">
+			<div class="detail"><b></div>
+			<div class="detail" id='totalText'></div></b>
 
 		</div>
 
@@ -58,23 +75,28 @@
 			<div class="detail"></div>
 		</div>
 		<div class="tripSummary">
-				<div><b>ผู้รับเงิน:</b> <br>นางสาวxx xx <br>ตำแหน่ง</div>
+				<div><b>แต้มสะสม:</b> <br></div>
+
+		<div class="transactionDetails">
+			<div class="detail"><b></div>
+			<div class="detail" id='equity'></div></b>
 				
 			
 		</div>
 		
 		<div class="returnPolicy bold" style="font-size:50%;">
 
-สามารถรับใบเสร็จต้นฉบับ ณ ... <br>โทร. ... </div>
+สามารถรับใบเสร็จต้นฉบับ <br>ณ ศูนย์บริการลูกค้า เจเทค บางพลู<br>โทร. 098 262 7888</div>
+
 		<div class="feedback">
 			<div class="break">
-				***********************************
+				*******************************
 			</div>
 			<p class="center">
-No Gift Policy ทส. โปร่งใส เป็นธรรม </p>	
+ซื้อสินค้าแล้ว ไม่รับเปลี่ยนคืน</p>	
 	
 			<div class="break">
-				***********************************
+				*******************************
 			</div>
 <p class="center">
 
@@ -83,6 +105,6 @@ No Gift Policy ทส. โปร่งใส เป็นธรรม </p>
 		</div>
 	</div>
 </div>
-	
+	<script src="js/bill.js"></script>
 </body>
 </html>
