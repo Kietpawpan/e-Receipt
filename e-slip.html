@@ -6,6 +6,9 @@
 
 
 <link type="text/css" rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<link href='https://fonts.googleapis.com/css?family=Orbitron'>
 
 </head>
 
@@ -15,13 +18,12 @@
 
 <div id="showScroll" class="container">
 	<div class="receipt"><div class="logo">
-เล่มที่ xx
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/krut.png" style="max-width:70px;max-height: 70px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-
-เลขที่ xxxx</div>
+		<div class='companyName'>jTech</div>
+		<div class='slogan'>e-Services</div>
+	</div>
 		<div class="address">
-			ตัวอย่างใบแทนใบเสร็จรับเงินอิเล็กทรอนิกส์<br>
-ชื่อหน่วยงาน
+ตัวอย่างใบประเมินมูลค่าสินค้าและบริการ<br>
+
  		</div>
 		<div class="transactionDetails" style="display:none;">
 			<div class="detail">Reg#17</div>
@@ -29,45 +31,27 @@
 			<div class="detail">CSHR#00097655</div>
 			<div class="detail">str#9852</div>
 		</div>
-		<div class="transactionDetails">
-			วันที่ xx xx xxxx<br>ได้รับเงินจาก: 
-		</div>
-		<div class="centerItem bold">
-			<div class="item">
-ชื่อลูกค้า: </div>
-		</div>
-		<div class="transactionDetails">
-			<div class="detail"></div>
-			<div class="detail">
-</div>
-			<div class="detail"></div>
-		</div>
+
 		<div class="survey bold">
 			<p>รายการ:</p>
 			<p class="surveyID"></p>
 		</div>
 		
 		<div class="transactionDetails">
-			<div class="detail">สัญญาณเน็ต</div>
-			<div class="detail" id='i1' type='text' value='6106'>6,106</div>
+			<div class="detail">สัญญาณอินเตอร์เน็ต</div>
+			<div class="detail" id='i1' type='text'></div>
 		</div>
 
 		<div class="transactionDetails">
 			<div class="detail">น้ำมันเชื้อเพลิง</div>
-			<div class="detail" id='i2' value='500'>300</div>
+			<div class="detail" id='i2'></div>
 		</div>
 
 		<div class="transactionDetails">
-			<div class="detail">งานสแตนเลส งวด 1</div>
-			<div class="detail" id='i3'>24,100</div>
+			<div class="detail">สแตนเลส</div>
+			<div class="detail" id='i3'></div>
 		</div>
 
-<!--
-		<div class="transactionDetails">
-			<div class="detail">สแตนเลส งวด 2</div>
-			<div class="detail" id='i3'>24,100</div>
-		</div>
--->
 		<div class="transactionDetails">
 			<div class="detail"><b>รวม</div>
 			<div class="detail" id='total'></div></b>
@@ -85,7 +69,7 @@
 			<div class="detail"></div>
 		</div>
 		<div class="tripSummary">
-				<div><b>แต้มสะสม:</b> <br></div>
+				<div><b>คะแนนสะสม:</b> <br></div>
 
 		<div class="transactionDetails">
 			<div class="detail"><b></div>
@@ -96,14 +80,14 @@
 		
 		<div class="returnPolicy bold" style="font-size:50%;">
 
-สามารถรับใบเสร็จต้นฉบับ <br>ณ ศูนย์บริการร่วม<br>โทร. xxx xxx xxxx</div>
+หมายเลขสมาชิก<br>xxx xxx xxx</div>
 
 		<div class="feedback">
 			<div class="break">
 				*******************************
 			</div>
 			<p class="center">
-ลดขยะ ลดโลกร้อน</p>	
+ราคารวมภาษีมูลค่าเพิ่มแล้ว</p>	
 	
 			<div class="break">
 				*******************************
@@ -211,16 +195,31 @@
 		['7','เจ็ด'],['8','แปด'],['9','เก้า'], 
 ]);
 
-	var i1 =6106;
-	var i2 = 300;
-	var i3 = 24100;
-//	var i4 = 24100;
+	var i1n =6106;
+	var i2n = 300;
+	var i3n = 24100;
+//New i
+
 	var term = 300000;
-	var sum = i1 + i2 + i3;
+
+	var sum = i1n + i2n + i3n;
+//New sum
+
 	var eq = term - sum;
+
+	var i1 = i1n.toLocaleString('en-US');
+	var i2 = i2n.toLocaleString('en-US');
+	var i3 = i3n.toLocaleString('en-US');
+//New en-US
+
 	var equity = eq.toLocaleString('en-US');
 	var total = sum.toLocaleString('en-US');
+
 	document.getElementById("total").innerHTML = total;
+	document.getElementById("i1").innerHTML = i1;
+	document.getElementById("i2").innerHTML = i2;
+	document.getElementById("i3").innerHTML = i3;
+
 
 	var thName = sum;
 	var n0 = thName.toString(); // "1,000,000,000.00"
