@@ -1,4 +1,11 @@
- {
+.slogan {
+  font-family: "Trirong", serif;
+   font-size: 11px;
+}
+
+
+
+{
   margin: 0;
   box-sizing: border-box;
   font-family: "VT323", monospace;
@@ -163,4 +170,11 @@
   font-size: 13px;
   text-align: center;
 }
+
+.companyName {
+  font-family: "Orbitron", serif;
+  font-size: 25px;
+  font-face: bold;
+}
+
 
