@@ -52,6 +52,10 @@
 			<div class="detail">สแตนเลส</div>
 			<div class="detail" id='i3'></div>
 		</div>
+			<div class="transactionDetails">
+			<div class="detail">สาธารณูปโภค มิ.ย. 66</div>
+			<div class="detail" id='i4'></div>
+		</div>
 
 		<div class="transactionDetails">
 			<div class="detail"><b>รวม</div>
@@ -199,11 +203,12 @@
 	var i1n =6106;
 	var i2n = 0;
 	var i3n = 24100;
+	var i4n = 20000;
 //New i
 
 	var term = 300000;
 
-	var sum = i1n + i2n + i3n;
+	var sum = i1n + i2n + i3n + i4n;
 //New sum
 
 	var eq = term - sum;
@@ -211,6 +216,8 @@
 	var i1 = i1n.toLocaleString('en-US');
 	var i2 = i2n.toLocaleString('en-US');
 	var i3 = i3n.toLocaleString('en-US');
+	var i4 = i4n.toLocaleString('en-US');
+	
 //New en-US
 
 	var equity = eq.toLocaleString('en-US');
