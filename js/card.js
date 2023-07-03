@@ -17,45 +17,76 @@ const cards = new Map([
 
 ]);
 
-
-function aPlay() {
-
-
+function start() {
+	var z1 = Math.floor(Math.random()*52)+1;
+	var z1s = z1.toString();
+	var z2 = Math.floor(Math.random()*52)+1;
+	var z2s = z2.toString();
+	var z3 = Math.floor(Math.random()*52)+1;
+	var z3s = z3.toString();
+	var z4 = Math.floor(Math.random()*52)+1;
+	var z4s = z4.toString();
+	var z5 = Math.floor(Math.random()*52)+1;
+	var z5s = z5.toString();
+	document.getElementById('z1').innerHTML = cards.get(z1s);
+	document.getElementById('z2').innerHTML = cards.get(z2s);
+	document.getElementById('z3').innerHTML = cards.get(z3s);
+	document.getElementById('z4').innerHTML = cards.get(z4s);
+	document.getElementById('z5').innerHTML = cards.get(z5s);
+}
+    
+function aPlay1() {
+ 
 	var c1 = Math.floor(Math.random()*52)+1;
 	var c1s = c1.toString();
 	var c2 = Math.floor(Math.random()*52)+1;
 	var c2s = c2.toString();
-	var c3 = Math.floor(Math.random()*52)+1;
-	var c3s = c3.toString();
-	var c4 = Math.floor(Math.random()*52)+1;
-	var c4s = c4.toString();
-	var c5 = Math.floor(Math.random()*52)+1;
-	var c5s = c5.toString();
-
-
 	document.getElementById('c1').innerHTML = cards.get(c1s);
 	document.getElementById('c2').innerHTML = cards.get(c2s);
+}
+
+function aPlay3() {
+	var c3 = Math.floor(Math.random()*52)+1;
+	var c3s = c3.toString();
 	document.getElementById('c3').innerHTML = cards.get(c3s);
+}
+
+function aPlay4() {
+	var c4 = Math.floor(Math.random()*52)+1;
+	var c4s = c4.toString();
 	document.getElementById('c4').innerHTML = cards.get(c4s);
+}
+
+function aPlay5() {
+	var c5 = Math.floor(Math.random()*52)+1;
+	var c5s = c5.toString();
 	document.getElementById('c5').innerHTML = cards.get(c5s);
 }
 
-function bPlay() {
+
+function bPlay1() {
 	var c6 = Math.floor(Math.random()*52)+1;
 	var c6s = c6.toString();
 	var c7 = Math.floor(Math.random()*52)+1;
 	var c7s = c7.toString();
-	var c8 = Math.floor(Math.random()*52)+1;
-	var c8s = c8.toString();
-	var c9 = Math.floor(Math.random()*52)+1;
-	var c9s = c9.toString();
-	var c10 = Math.floor(Math.random()*52)+1;
-	var c10s = c10.toString();
-
 	document.getElementById('c6').innerHTML = cards.get(c6s);
 	document.getElementById('c7').innerHTML = cards.get(c7s);
-	document.getElementById('c8').innerHTML = cards.get(c8s);
-	document.getElementById('c9').innerHTML = cards.get(c9s);
-	document.getElementById('c10').innerHTML =cards.get(c10s);
 }
 
+function bPlay3() {
+	var c8 = Math.floor(Math.random()*52)+1;
+	var c8s = c8.toString();
+	document.getElementById('c8').innerHTML = cards.get(c8s);
+}
+
+function bPlay4() {
+	var c9 = Math.floor(Math.random()*52)+1;
+	var c9s = c9.toString();
+	document.getElementById('c9').innerHTML = cards.get(c9s);
+}
+
+function bPlay5() {
+	var c10 = Math.floor(Math.random()*52)+1;
+	var c10s = c10.toString();
+	document.getElementById('c10').innerHTML =cards.get(c10s);
+}
