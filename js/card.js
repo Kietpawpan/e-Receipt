@@ -33,6 +33,17 @@ function start() {
 	document.getElementById('z3').innerHTML = cards.get(z3s);
 	document.getElementById('z4').innerHTML = cards.get(z4s);
 	document.getElementById('z5').innerHTML = cards.get(z5s);
+	document.getElementById('z5').innerHTML = cards.get(z5s);
+	document.getElementById('c1').innerHTML = '\u{1F0A0}';
+	document.getElementById('c2').innerHTML = '\u{1F0A0}';
+	document.getElementById('c3').innerHTML = '\u{1F0A0}';
+	document.getElementById('c4').innerHTML = '\u{1F0A0}';
+	document.getElementById('c5').innerHTML = '\u{1F0A0}';
+	document.getElementById('c6').innerHTML = '\u{1F0A0}';
+	document.getElementById('c7').innerHTML = '\u{1F0A0}';
+	document.getElementById('c8').innerHTML = '\u{1F0A0}';
+	document.getElementById('c9').innerHTML = '\u{1F0A0}';
+	document.getElementById('c10').innerHTML = '\u{1F0A0}';
 }
     
 function aPlay1() {
