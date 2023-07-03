@@ -31,9 +31,8 @@ function start() {
 	document.getElementById('z1').innerHTML = cards.get(z1s);
 	document.getElementById('z2').innerHTML = cards.get(z2s);
 	document.getElementById('z3').innerHTML = cards.get(z3s);
-	document.getElementById('z4').innerHTML = cards.get(z4s);
-	document.getElementById('z5').innerHTML = cards.get(z5s);
-	document.getElementById('z5').innerHTML = cards.get(z5s);
+	document.getElementById('z4').innerHTML = '\u{1F0A0}';
+	document.getElementById('z5').innerHTML = '\u{1F0A0}';
 	document.getElementById('c1').innerHTML = '\u{1F0A0}';
 	document.getElementById('c2').innerHTML = '\u{1F0A0}';
 	document.getElementById('c3').innerHTML = '\u{1F0A0}';
@@ -45,7 +44,20 @@ function start() {
 	document.getElementById('c9').innerHTML = '\u{1F0A0}';
 	document.getElementById('c10').innerHTML = '\u{1F0A0}';
 }
-    
+
+function turn() {
+	var z4 = Math.floor(Math.random()*52)+1;
+	var z4s = z4.toString();
+	document.getElementById('z4').innerHTML = cards.get(z4s);
+
+}
+ 
+function river() {
+	var z5 = Math.floor(Math.random()*52)+1;
+	var z5s = z5.toString();
+	document.getElementById('z5').innerHTML = cards.get(z5s);
+
+}   
 function aPlay1() {
  
 	var c1 = Math.floor(Math.random()*52)+1;
