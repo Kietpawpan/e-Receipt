@@ -39,23 +39,33 @@
 		</div>
 		
 		<div class="transactionDetails">
-			<div class="detail">สัญญาณทรู มิ.ย. 66</div>
+			<div class="detail">สัญญาณทรู</div>
 			<div class="detail" id='i1' type='text'></div>
 		</div>
+
 
 		<div class="transactionDetails">
 			<div class="detail">น้ำมันเชื้อเพลิง</div>
 			<div class="detail" id='i2'></div>
 		</div>
 
+
 		<div class="transactionDetails">
 			<div class="detail">สแตนเลส</div>
 			<div class="detail" id='i3'></div>
 		</div>
-			<div class="transactionDetails">
-			<div class="detail">สาธารณูปโภค มิ.ย. 66</div>
+
+
+		<div class="transactionDetails">
+			<div class="detail">สาธารณูปโภค</div>
 			<div class="detail" id='i4'></div>
 		</div>
+
+		<div class="transactionDetails">
+			<div class="detail">ครัวลุงหนุ่ม</div>
+			<div class="detail" id='i5'></div>
+		</div>
+
 
 		<div class="transactionDetails">
 			<div class="detail"><b>รวม</div>
@@ -92,7 +102,7 @@
 				*******************************
 			</div>
 			<p class="center">
-ราคารวมภาษีมูลค่าเพิ่มแล้ว</p>	
+สินค้าซื้อแล้ว ไม่รับเปลี่ยนคืน</p>	
 	
 			<div class="break">
 				*******************************
@@ -204,11 +214,13 @@
 	var i2n = 0;
 	var i3n = 24100;
 	var i4n = 20000;
+	var i5n = 2640;
+
 //New i
 
 	var term = 300000;
 
-	var sum = i1n + i2n + i3n + i4n;
+	var sum = i1n + i2n + i3n + i4n + i5n;
 //New sum
 
 	var eq = term - sum;
@@ -217,7 +229,8 @@
 	var i2 = i2n.toLocaleString('en-US');
 	var i3 = i3n.toLocaleString('en-US');
 	var i4 = i4n.toLocaleString('en-US');
-	
+	var i5 = i5n.toLocaleString('en-US');	
+
 //New en-US
 
 	var equity = eq.toLocaleString('en-US');
@@ -228,7 +241,7 @@
 	document.getElementById("i2").innerHTML = i2;
 	document.getElementById("i3").innerHTML = i3;
 	document.getElementById("i4").innerHTML = i4;
-
+	document.getElementById("i5").innerHTML = i5;
 
 	var thName = sum;
 	var n0 = thName.toString(); // "1,000,000,000.00"
