@@ -13,7 +13,7 @@ const cards = new Map([
 		[31,'\u{1F0C8}'],[35,'\u{1F0C9}'],[39,'\u{1F0CA}'],[43,'\u{1F0CB}'],[47,'\u{1F0CD}'],[51,'\u{1F0CE}'],
 
 		[4,'\u{1F0C1}'],[8,'\u{1F0C2}'],[12,'\u{1F0C3}'],[16,'\u{1F0C4}'],[20,'\u{1F0C5}'],[24,'\u{1F0C6}'],[28,'\u{1F0C7}'],
-		[32,'\u{1F0C8}'],[36,'\u{1F0C9}'],[40,'\u{1F0CA}'],[44,'\u{1F0CB}'],[48,'\u{1F0CD}'],[52,'\u{1F0CE}'],
+		[32,'\u{1F0C8}'],[36,'\u{1F0C9}'],[40,'\u{1F0CA}'],[44,'\u{1F0CB}'],[48,'\u{1F0CD}'],[52,'\u{1F0CE}'],[0,''],
 
 ]);
 
@@ -153,4 +153,10 @@ function help() {
 	document.getElementById('b4').innerHTML = cards.get(16);
 	document.getElementById('b5').innerHTML = cards.get(17);
 }
+
+function reload() {
+	location.reload();
+
+}
+
 
