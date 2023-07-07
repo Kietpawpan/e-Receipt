@@ -97,14 +97,25 @@ function start() {
 	document.getElementById('c1').innerHTML = '\u{1F0A0}';
 	document.getElementById('c1').style.color='blue';
 
+
 	document.getElementById('c2').innerHTML = '\u{1F0A0}';
 	document.getElementById('c2').style.color='blue';
+
+	document.getElementById('c3').innerHTML = cards.get(0);
+	document.getElementById('c4').innerHTML = cards.get(0);
+	document.getElementById('c5').innerHTML = cards.get(0);
+
 
 	document.getElementById('c6').innerHTML = '\u{1F0A0}';
 	document.getElementById('c6').style.color='blue';
 
 	document.getElementById('c7').innerHTML = '\u{1F0A0}';
 	document.getElementById('c7').style.color='blue';
+
+	document.getElementById('c8').innerHTML = cards.get(0);
+	document.getElementById('c9').innerHTML = cards.get(0);
+	document.getElementById('c10').innerHTML = cards.get(0);
+
 
 	document.getElementById('a1').innerHTML = cards.get(0);
 	document.getElementById('a2').innerHTML = cards.get(0);
@@ -294,35 +305,59 @@ function check() {
 
 function help() {
 	document.getElementById('c1').innerHTML = cards.get(37);
+	document.getElementById('c1').style.color='black';
 	document.getElementById('c2').innerHTML = cards.get(41);
+	document.getElementById('c2').style.color='black';
 	document.getElementById('c3').innerHTML = cards.get(45);
+	document.getElementById('c3').style.color='black';
 	document.getElementById('c4').innerHTML = cards.get(49);
+	document.getElementById('c4').style.color='black';
 	document.getElementById('c5').innerHTML = cards.get(1);
+	document.getElementById('c5').style.color='black';
 
 	document.getElementById('z1').innerHTML = cards.get(1);
+	document.getElementById('z1').style.color='black';
 	document.getElementById('z2').innerHTML = cards.get(2);
+	document.getElementById('z2').style.color='red';
 	document.getElementById('z3').innerHTML = cards.get(3);
+	document.getElementById('z3').style.color='red';
 	document.getElementById('z4').innerHTML = cards.get(4);
+	document.getElementById('z4').style.color='black';
 	document.getElementById('z5').innerHTML = cards.get(37);
+	document.getElementById('z5').style.color='black';
 
 	document.getElementById('c6').innerHTML = cards.get(49);
+	document.getElementById('c6').style.color='black';
 	document.getElementById('c7').innerHTML = cards.get(50);
+	document.getElementById('c7').style.color='red';
 	document.getElementById('c8').innerHTML = cards.get(51);
+	document.getElementById('c8').style.color='red';
 	document.getElementById('c9').innerHTML = cards.get(37);
+	document.getElementById('c9').style.color='black';
 	document.getElementById('c10').innerHTML = cards.get(38);
+	document.getElementById('c10').style.color='red';
 
 	document.getElementById('a1').innerHTML = cards.get(5);
+	document.getElementById('a1').style.color='black';
 	document.getElementById('a2').innerHTML = cards.get(13);
+	document.getElementById('a2').style.color='black';
 	document.getElementById('a3').innerHTML = cards.get(25);
+	document.getElementById('a3').style.color='black';
 	document.getElementById('a4').innerHTML = cards.get(29);
+	document.getElementById('a4').style.color='black';
 	document.getElementById('a5').innerHTML = cards.get(49);
+	document.getElementById('a5').style.color='black';
 
 	document.getElementById('b1').innerHTML = cards.get(1);
+	document.getElementById('b1').style.color='black';
 	document.getElementById('b2').innerHTML = cards.get(6);
+	document.getElementById('b2').style.color='red';
 	document.getElementById('b3').innerHTML = cards.get(11);
+	document.getElementById('b3').style.color='red';
 	document.getElementById('b4').innerHTML = cards.get(16);
+	document.getElementById('b4').style.color='black';
 	document.getElementById('b5').innerHTML = cards.get(17);
-}
+	document.getElementById('b5').style.color='black';}
 
 function reload() {
 	document.getElementById('c1').innerHTML = cards.get(0);
