@@ -84,14 +84,43 @@ function bWin() {
 
 function start() {
 	document.getElementById('z1').innerHTML = '\u{1F0A0}';
+	document.getElementById('z1').style.color='blue';
 	document.getElementById('z2').innerHTML = '\u{1F0A0}';
+	document.getElementById('z2').style.color='blue';
 	document.getElementById('z3').innerHTML = '\u{1F0A0}';
+	document.getElementById('z3').style.color='blue';
 	document.getElementById('z4').innerHTML = '\u{1F0A0}';
+	document.getElementById('z4').style.color='blue';
 	document.getElementById('z5').innerHTML = '\u{1F0A0}';
+	document.getElementById('z5').style.color='blue';
+
 	document.getElementById('c1').innerHTML = '\u{1F0A0}';
+	document.getElementById('c1').style.color='blue';
+
 	document.getElementById('c2').innerHTML = '\u{1F0A0}';
+	document.getElementById('c2').style.color='blue';
+
 	document.getElementById('c6').innerHTML = '\u{1F0A0}';
+	document.getElementById('c6').style.color='blue';
+
 	document.getElementById('c7').innerHTML = '\u{1F0A0}';
+	document.getElementById('c7').style.color='blue';
+
+	document.getElementById('a1').innerHTML = cards.get(0);
+	document.getElementById('a2').innerHTML = cards.get(0);
+	document.getElementById('a3').innerHTML = cards.get(0);
+	document.getElementById('a4').innerHTML = cards.get(0);
+	document.getElementById('a5').innerHTML = cards.get(0);
+	document.getElementById('a6').innerHTML = cards.get(0);
+	document.getElementById('a7').innerHTML = cards.get(0);
+	document.getElementById('b1').innerHTML = cards.get(0);
+	document.getElementById('b2').innerHTML = cards.get(0);
+	document.getElementById('b3').innerHTML = cards.get(0);
+	document.getElementById('b4').innerHTML = cards.get(0);
+	document.getElementById('b5').innerHTML = cards.get(0);
+	document.getElementById('b6').innerHTML = cards.get(0);
+	document.getElementById('b7').innerHTML = cards.get(0);
+
 }
 
 function hole() { 
