@@ -39,8 +39,8 @@ function a500() {
 		var aNum = Number(aScore);
 		var pot = document.getElementById('pot').innerHTML;
 		var potNum = Number(pot);
-		var aToPot = potNum + 500;	
-		var newScore = aNum - 500;
+		var aToPot = potNum + 1000;	
+		var newScore = aNum - 1000;
 		document.getElementById('pot').innerHTML = aToPot;
 		document.getElementById('AScore').innerHTML = newScore;
 	
@@ -51,8 +51,8 @@ function b500() {
 		var bNum = Number(bScore);
 		var pot = document.getElementById('pot').innerHTML;
 		var potNum = Number(pot);
-		var bToPot = potNum + 500;	
-		var newScore = bNum - 500;
+		var bToPot = potNum * 2;	
+		var newScore = bNum - potNum;
 		document.getElementById('pot').innerHTML = bToPot;
 		document.getElementById('BScore').innerHTML = newScore;
 	
