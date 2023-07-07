@@ -132,6 +132,12 @@ function start() {
 	document.getElementById('b6').innerHTML = cards.get(0);
 	document.getElementById('b7').innerHTML = cards.get(0);
 
+	document.getElementById('sf').innerHTML = cards.get(0);
+	document.getElementById('fo').innerHTML = cards.get(0);
+	document.getElementById('full').innerHTML = cards.get(0);
+	document.getElementById('flush').innerHTML = cards.get(0);
+	document.getElementById('st').innerHTML = cards.get(0);
+	
 }
 
 function hole() { 
@@ -304,6 +310,7 @@ function check() {
 }
 
 function help() {
+	document.getElementById('sf').innerHTML = 'Straight Flush';
 	document.getElementById('c1').innerHTML = cards.get(37);
 	document.getElementById('c1').style.color='black';
 	document.getElementById('c2').innerHTML = cards.get(41);
@@ -315,6 +322,7 @@ function help() {
 	document.getElementById('c5').innerHTML = cards.get(1);
 	document.getElementById('c5').style.color='black';
 
+	document.getElementById('fo').innerHTML = 'Four of Kind';
 	document.getElementById('z1').innerHTML = cards.get(1);
 	document.getElementById('z1').style.color='black';
 	document.getElementById('z2').innerHTML = cards.get(2);
@@ -326,6 +334,7 @@ function help() {
 	document.getElementById('z5').innerHTML = cards.get(37);
 	document.getElementById('z5').style.color='black';
 
+	document.getElementById('full').innerHTML = 'Full House';
 	document.getElementById('c6').innerHTML = cards.get(49);
 	document.getElementById('c6').style.color='black';
 	document.getElementById('c7').innerHTML = cards.get(50);
@@ -337,6 +346,7 @@ function help() {
 	document.getElementById('c10').innerHTML = cards.get(38);
 	document.getElementById('c10').style.color='red';
 
+	document.getElementById('flush').innerHTML = 'Flush';
 	document.getElementById('a1').innerHTML = cards.get(5);
 	document.getElementById('a1').style.color='black';
 	document.getElementById('a2').innerHTML = cards.get(13);
@@ -348,6 +358,7 @@ function help() {
 	document.getElementById('a5').innerHTML = cards.get(49);
 	document.getElementById('a5').style.color='black';
 
+	document.getElementById('st').innerHTML = 'Straight';
 	document.getElementById('b1').innerHTML = cards.get(1);
 	document.getElementById('b1').style.color='black';
 	document.getElementById('b2').innerHTML = cards.get(6);
@@ -397,6 +408,12 @@ function reload() {
 	document.getElementById('AScore').innerHTML = 0;
 	document.getElementById('BScore').innerHTML = 0;
 	document.getElementById('pot').innerHTML = 0;
+
+	document.getElementById('sf').innerHTML = cards.get(0);
+	document.getElementById('fo').innerHTML = cards.get(0);
+	document.getElementById('full').innerHTML = cards.get(0);
+	document.getElementById('flush').innerHTML = cards.get(0);
+	document.getElementById('st').innerHTML = cards.get(0);
 
 
 }
