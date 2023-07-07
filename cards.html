@@ -20,7 +20,8 @@
 <div id="showScroll" class="container">
 	<div class="receipt"><div class="logo">
 		<div class='companyName'>jTech</div>
-		<div class='slogan'>Texas Hold'em<br></div><br>
+		<div class='slogan'>Texas Hold'em<br></div>
+
 		<button onclick='start()'>Start</button>
 		<button onclick='help()'>Help</button>
 		<button onclick='reload()'>Clear</button><br><br>
@@ -28,7 +29,17 @@
 		<button onclick='flop()'>Flop</button>
 		<button onclick='turn()'>Turn</button>
 		<button onclick='river()'>River</button>
-		<button onclick='check()'>Check</button>
+		<button onclick='check()'>Check</button><br><br>
+		<button onclick='a500()'>A500</button>
+		<button onclick='b500()'>B500</button>
+		<button onclick='aWin()'>A Win</button>
+		<button onclick='bWin()'>B Win</button><br><br>
+		A:
+		<div class='slogan' id='AScore' style='font-size:14px'></div>
+		B:
+		<div class='slogan' id='BScore' style='font-size:14px'></div><br>
+		Pot: <div id='pot'></div><br><br>
+
 	</div>
 		
 		<div class="transactionDetails">
