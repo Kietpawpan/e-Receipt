@@ -34,6 +34,53 @@ const cardsF = new Map([
 const redCard1 = [2, 6, 10, 14, 18, 22, 26, 30, 34, 38, 42, 46, 50];
 const redCard2 = [3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 36, 47, 51];
 
+function a500() {
+		var aScore = document.getElementById('AScore').innerHTML;
+		var aNum = Number(aScore);
+		var pot = document.getElementById('pot').innerHTML;
+		var potNum = Number(pot);
+		var aToPot = potNum + 500;	
+		var newScore = aNum - 500;
+		document.getElementById('pot').innerHTML = aToPot;
+		document.getElementById('AScore').innerHTML = newScore;
+	
+}
+
+function b500() {
+		var bScore = document.getElementById('BScore').innerHTML;
+		var bNum = Number(bScore);
+		var pot = document.getElementById('pot').innerHTML;
+		var potNum = Number(pot);
+		var bToPot = potNum + 500;	
+		var newScore = bNum - 500;
+		document.getElementById('pot').innerHTML = bToPot;
+		document.getElementById('BScore').innerHTML = newScore;
+	
+}
+
+function aWin() {
+		var aScore = document.getElementById('AScore').innerHTML;
+		var aNum = Number(aScore);
+		var pot = document.getElementById('pot').innerHTML;
+		var potNum = Number(pot);
+		var zeroPot = potNum - potNum;	
+		var newScore = aNum + potNum;
+		document.getElementById('pot').innerHTML = zeroPot;
+		document.getElementById('AScore').innerHTML = newScore;
+	
+}
+
+function bWin() {
+		var bScore = document.getElementById('BScore').innerHTML;
+		var bNum = Number(bScore);
+		var pot = document.getElementById('pot').innerHTML;
+		var potNum = Number(pot);
+		var zeroPot = potNum - potNum;	
+		var newScore = bNum + potNum;
+		document.getElementById('pot').innerHTML = zeroPot;
+		document.getElementById('BScore').innerHTML = newScore;
+	
+}
 
 function start() {
 	document.getElementById('z1').innerHTML = '\u{1F0A0}';
@@ -282,6 +329,11 @@ function reload() {
 	document.getElementById('b5').innerHTML = cards.get(0);
 	document.getElementById('b6').innerHTML = cards.get(0);
 	document.getElementById('b7').innerHTML = cards.get(0);
+
+	document.getElementById('AScore').innerHTML = 0;
+	document.getElementById('BScore').innerHTML = 0;
+	document.getElementById('pot').innerHTML = 0;
+
 
 }
 
