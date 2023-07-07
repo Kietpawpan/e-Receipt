@@ -12,8 +12,8 @@ const cards = new Map([
 		[3,'\u{1F0C1}'],[7,'\u{1F0C2}'],[11,'\u{1F0C3}'],[15,'\u{1F0C4}'],[19,'\u{1F0C5}'],[23,'\u{1F0C6}'],[27,'\u{1F0C7}'],
 		[31,'\u{1F0C8}'],[35,'\u{1F0C9}'],[39,'\u{1F0CA}'],[43,'\u{1F0CB}'],[47,'\u{1F0CD}'],[51,'\u{1F0CE}'],
 
-		[4,'\u{1F0C1}'],[8,'\u{1F0C2}'],[12,'\u{1F0C3}'],[16,'\u{1F0C4}'],[20,'\u{1F0C5}'],[24,'\u{1F0C6}'],[28,'\u{1F0C7}'],
-		[32,'\u{1F0C8}'],[36,'\u{1F0C9}'],[40,'\u{1F0CA}'],[44,'\u{1F0CB}'],[48,'\u{1F0CD}'],[52,'\u{1F0CE}'],[0,''],
+		[4,'\u{1F0D1}'],[8,'\u{1F0D2}'],[12,'\u{1F0D3}'],[16,'\u{1F0D4}'],[20,'\u{1F0D5}'],[24,'\u{1F0D6}'],[28,'\u{1F0D7}'],
+		[32,'\u{1F0D8}'],[36,'\u{1F0D9}'],[40,'\u{1F0DA}'],[44,'\u{1F0DB}'],[48,'\u{1F0DD}'],[52,'\u{1F0DE}'],[0,''],
 
 ]);
 
@@ -27,10 +27,13 @@ const cardsF = new Map([
 		['\u{1F0C1}',3],['\u{1F0C2}',7],['\u{1F0C3}',11],['\u{1F0C4}',15],['\u{1F0C5}',19],['\u{1F0C6}',23],['\u{1F0C7}',27],
 		['\u{1F0C8}',31],['\u{1F0C9}',35],['\u{1F0CA}',39],['\u{1F0CB}',43],['\u{1F0CD}',47],['\u{1F0CE}',51],
 
-		['\u{1F0C1}',4],['\u{1F0C2}',8],['\u{1F0C3}',12],['\u{1F0C4}',16],['\u{1F0C5}',20],['\u{1F0C6}',24],['\u{1F0C7}',28],
-		['\u{1F0C8}',32],['\u{1F0C9}',36],['\u{1F0CA}',40],['\u{1F0CB}',44],['\u{1F0CD}',48],['\u{1F0CE}',52],
-
+		['\u{1F0D1}',4],['\u{1F0D2}',8],['\u{1F0D3}',12],['\u{1F0D4}',16],['\u{1F0D5}',20],['\u{1F0D6}',24],['\u{1F0D7}',28],
+		['\u{1F0D8}',32],['\u{1F0D9}',36],['\u{1F0DA}',40],['\u{1F0DB}',44],['\u{1F0DD}',48],['\u{1F0DE}',52],
 ]);
+
+const redCard1 = [2, 6, 10, 14, 18, 22, 26, 30, 34, 38, 42, 46, 50];
+const redCard2 = [3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 36, 47, 51];
+
 
 function start() {
 	document.getElementById('z1').innerHTML = '\u{1F0A0}';
@@ -50,31 +53,65 @@ function hole() {
 	var c6 = Math.floor(Math.random()*52)+1;
 	var c7 = Math.floor(Math.random()*52)+1;
 	document.getElementById('c1').innerHTML = cards.get(c1);
+	if(redCard1.includes(c1)){document.getElementById('c1').style.color='red';}
+	else if(redCard2.includes(c1)){document.getElementById('c1').style.color='red';}
+	else{document.getElementById('c1').style.color='black';}
+
 	document.getElementById('c2').innerHTML = cards.get(c2);
+	if(redCard1.includes(c2)){document.getElementById('c2').style.color='red';}
+	else if(redCard2.includes(c2)){document.getElementById('c2').style.color='red';}
+	else{document.getElementById('c2').style.color='black';}
+
 	document.getElementById('c6').innerHTML = cards.get(c6);
-	document.getElementById('c7').innerHTML = cards.get(c7);	
+	if(redCard1.includes(c6)){document.getElementById('c6').style.color='red';}
+	else if(redCard2.includes(c6)){document.getElementById('c6').style.color='red';}
+	else{document.getElementById('c6').style.color='black';}
+
+	document.getElementById('c7').innerHTML = cards.get(c7);
+	if(redCard1.includes(c7)){document.getElementById('c7').style.color='red';}
+	else if(redCard2.includes(c7)){document.getElementById('c7').style.color='red';}
+	else{document.getElementById('c7').style.color='black';}
+	
 }
 
 function flop() {
 	var z1 = Math.floor(Math.random()*52)+1;
 	var z2 = Math.floor(Math.random()*52)+1;
 	var z3 = Math.floor(Math.random()*52)+1;
-	var z4 = Math.floor(Math.random()*52)+1;
-	var z5 = Math.floor(Math.random()*52)+1;
+
 	document.getElementById('z1').innerHTML = cards.get(z1);
+	if(redCard1.includes(z1)){document.getElementById('z1').style.color='red';}
+	else if(redCard2.includes(z1)){document.getElementById('z1').style.color='red';}
+	else{document.getElementById('z1').style.color='black';}
+
 	document.getElementById('z2').innerHTML = cards.get(z2);
+	if(redCard1.includes(z2)){document.getElementById('z2').style.color='red';}
+	else if(redCard2.includes(z2)){document.getElementById('z2').style.color='red';}
+	else{document.getElementById('z2').style.color='black';}
+
 	document.getElementById('z3').innerHTML = cards.get(z3);
+	if(redCard1.includes(z3)){document.getElementById('z3').style.color='red';}
+	else if(redCard2.includes(z3)){document.getElementById('z3').style.color='red';}
+	else{document.getElementById('z3').style.color='black';}
+
 }
 
 function turn() {
 	var z4 = Math.floor(Math.random()*52)+1;
 	document.getElementById('z4').innerHTML = cards.get(z4);
+	if(redCard1.includes(z4)){document.getElementById('z4').style.color='red';}
+	else if(redCard2.includes(z4)){document.getElementById('z4').style.color='red';}
+	else{document.getElementById('z4').style.color='black';}
 
 }
  
 function river() {
 	var z5 = Math.floor(Math.random()*52)+1;
 	document.getElementById('z5').innerHTML = cards.get(z5);
+	if(redCard1.includes(z5)){document.getElementById('z5').style.color='red';}
+	else if(redCard2.includes(z5)){document.getElementById('z5').style.color='red';}
+	else{document.getElementById('z5').style.color='black';}
+
 
 }   
 
@@ -105,20 +142,77 @@ function check() {
 	const holdB = hold0b.sort(function(a, b){return a - b});
 
 	document.getElementById('a1').innerHTML = cards.get(holdA[0]);
+	if(redCard1.includes(holdA[0])){document.getElementById('a1').style.color='red';}
+	else if(redCard2.includes(holdA[0])){document.getElementById('a1').style.color='red';}
+	else{document.getElementById('a1').style.color='black';}
+
 	document.getElementById('a2').innerHTML = cards.get(holdA[1]);
+	if(redCard1.includes(holdA[1])){document.getElementById('a2').style.color='red';}
+	else if(redCard2.includes(holdA[1])){document.getElementById('a2').style.color='red';}
+	else{document.getElementById('a2').style.color='black';}
+
 	document.getElementById('a3').innerHTML = cards.get(holdA[2]);
+	if(redCard1.includes(holdA[2])){document.getElementById('a3').style.color='red';}
+	else if(redCard2.includes(holdA[2])){document.getElementById('a3').style.color='red';}
+	else{document.getElementById('a3').style.color='black';}
+
 	document.getElementById('a4').innerHTML = cards.get(holdA[3]);
+	if(redCard1.includes(holdA[3])){document.getElementById('a4').style.color='red';}
+	else if(redCard2.includes(holdA[3])){document.getElementById('a4').style.color='red';}
+	else{document.getElementById('a4').style.color='black';}
+
 	document.getElementById('a5').innerHTML = cards.get(holdA[4]);
+	if(redCard1.includes(holdA[4])){document.getElementById('a5').style.color='red';}
+	else if(redCard2.includes(holdA[4])){document.getElementById('a5').style.color='red';}
+	else{document.getElementById('a5').style.color='black';}
+
 	document.getElementById('a6').innerHTML = cards.get(holdA[5]);
+	if(redCard1.includes(holdA[5])){document.getElementById('a6').style.color='red';}
+	else if(redCard2.includes(holdA[5])){document.getElementById('a6').style.color='red';}
+	else{document.getElementById('a6').style.color='black';}
+
 	document.getElementById('a7').innerHTML = cards.get(holdA[6]);
+	if(redCard1.includes(holdA[6])){document.getElementById('a7').style.color='red';}
+	else if(redCard2.includes(holdA[6])){document.getElementById('a7').style.color='red';}
+	else{document.getElementById('a7').style.color='black';}
 
 	document.getElementById('b1').innerHTML = cards.get(holdB[0]);
+	if(redCard1.includes(holdB[0])){document.getElementById('b1').style.color='red';}
+	else if(redCard2.includes(holdB[0])){document.getElementById('b1').style.color='red';}
+	else{document.getElementById('b1').style.color='black';}
+
 	document.getElementById('b2').innerHTML = cards.get(holdB[1]);
+	if(redCard1.includes(holdB[1])){document.getElementById('b2').style.color='red';}
+	else if(redCard2.includes(holdB[1])){document.getElementById('b2').style.color='red';}
+	else{document.getElementById('b2').style.color='black';}
+
 	document.getElementById('b3').innerHTML = cards.get(holdB[2]);
+	if(redCard1.includes(holdB[2])){document.getElementById('b3').style.color='red';}
+	else if(redCard2.includes(holdB[2])){document.getElementById('b3').style.color='red';}
+	else{document.getElementById('b3').style.color='black';}
+
 	document.getElementById('b4').innerHTML = cards.get(holdB[3]);
+	if(redCard1.includes(holdB[3])){document.getElementById('b4').style.color='red';}
+	else if(redCard2.includes(holdB[3])){document.getElementById('b4').style.color='red';}
+	else{document.getElementById('b4').style.color='black';}
+
 	document.getElementById('b5').innerHTML = cards.get(holdB[4]);
+	if(redCard1.includes(holdB[4])){document.getElementById('b5').style.color='red';}
+	else if(redCard2.includes(holdB[4])){document.getElementById('b5').style.color='red';}
+	else{document.getElementById('b5').style.color='black';}
+
 	document.getElementById('b6').innerHTML = cards.get(holdB[5]);
+	if(redCard1.includes(holdB[5])){document.getElementById('b6').style.color='red';}
+	else if(redCard2.includes(holdB[5])){document.getElementById('b6').style.color='red';}
+	else{document.getElementById('b6').style.color='black';}
+
 	document.getElementById('b7').innerHTML = cards.get(holdB[6]);
+	if(redCard1.includes(holdB[6])){document.getElementById('b7').style.color='red';}
+	else if(redCard2.includes(holdB[6])){document.getElementById('b7').style.color='red';}
+	else{document.getElementById('b7').style.color='black';}
+
+
+
 
 }
 
