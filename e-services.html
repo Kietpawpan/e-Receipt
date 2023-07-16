@@ -70,7 +70,11 @@
 			<div class="detail">ฉีดปลวก</div>
 			<div class="detail" id='i6'></div>
 		</div>
-
+		
+                <div class="transactionDetails">
+			<div class="detail">ทรู ก.ค. 66</div>
+			<div class="detail" id='i7'></div>
+		</div>
 
 		<div class="transactionDetails">
 			<div class="detail"><b>รวม</div>
@@ -221,12 +225,13 @@
 	var i4n = 20000;
 	var i5n = 2640;
 	var i6n = 12000;
+	let i7n = 6356.64;
 
 //New i
 
 	var term = 300000;
 
-	var sum = i1n + i2n + i3n + i4n + i5n + i6n;
+	var sum = i1n + i2n + i3n + i4n + i5n + i6n + i7n;
 //New sum
 
 	var eq = term - sum;
@@ -237,6 +242,8 @@
 	var i4 = i4n.toLocaleString('en-US');
 	var i5 = i5n.toLocaleString('en-US');	
         var i6 = i6n.toLocaleString('en-US');	
+	var i7 = i7n.toLocaleString('en-US');	
+	
 //New en-US
 
 	var equity = eq.toLocaleString('en-US');
@@ -249,6 +256,7 @@
 	document.getElementById("i4").innerHTML = i4;
 	document.getElementById("i5").innerHTML = i5;
         document.getElementById("i6").innerHTML = i6;
+	document.getElementById("i7").innerHTML = i7;
 	
 	var thName = sum;
 	var n0 = thName.toString(); // "1,000,000,000.00"
