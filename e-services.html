@@ -95,6 +95,11 @@
 			<div class="detail">โบว์ลิ่ง</div>
 			<div class="detail" id='i11'></div>
 		</div>
+		
+		<div class="transactionDetails">
+			<div class="detail">รายเดือน ส.ค. 66</div>
+			<div class="detail" id='i12'></div>
+		</div>
 
 		<div class="transactionDetails">
 			<div class="detail"><b>รวม</div>
@@ -250,12 +255,13 @@
 	let i9n = 3518.33+2945.31;
 	let i10n = 400;
 	let i11n = 1667;
+	let i11n = 10000;
 	
 //New i
 
 	var term = 300000;
 
-	var sum = i1n + i2n + i3n + i4n + i5n + i6n + i7n + i8n + i9n + i10n + i11n;
+	var sum = i1n + i2n + i3n + i4n + i5n + i6n + i7n + i8n + i9n + i10n + i11n + i12n;
 //New sum
 
 	var eq = term - sum;
@@ -271,6 +277,7 @@
 	var i9 = i9n.toLocaleString('en-US');	
 	var i10 = i10n.toLocaleString('en-US');	
 	var i11 = i11n.toLocaleString('en-US');	
+	var i12 = i12n.toLocaleString('en-US');	
 	
 //New en-US
 
@@ -289,6 +296,7 @@
 	document.getElementById("i9").innerHTML = i9;
         document.getElementById("i10").innerHTML = i10;
         document.getElementById("i11").innerHTML = i11;
+	document.getElementById("i11").innerHTML = i12;
 	
 	var thName = sum;
 	var n0 = thName.toString(); // "1,000,000,000.00"
