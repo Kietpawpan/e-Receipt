@@ -102,6 +102,20 @@
 		</div>
 
 		<div class="transactionDetails">
+			<div class="detail">ผึ้งดูแลป้อนที่ ร.พ. ส.ค. 66</div>
+			<div class="detail" id='i13'></div>
+		</div>
+		<div class="transactionDetails">
+			<div class="detail">โอนค่ารักษาป้อน ส.ค. 66</div>
+			<div class="detail" id='i14'></div>
+		</div>
+
+		<div class="transactionDetails">
+			<div class="detail">โอนค่าจ้างเสก 2 ก.ย. 66</div>
+			<div class="detail" id='i15'></div>
+		</div>
+
+		<div class="transactionDetails">
 			<div class="detail"><b>รวม</div>
 			<div class="detail" id='total'></div></b>
 
@@ -256,12 +270,13 @@
 	let i10n = 400;
 	let i11n = 1667;
 	let i12n = 10000;
-	
+	let i13n = 2000;
+	let i14n = 36000;
+	let i15n = 12000;
 //New i
-
 	var term = 300000;
 
-	var sum = i1n + i2n + i3n + i4n + i5n + i6n + i7n + i8n + i9n + i10n + i11n + i12n;
+	var sum = i1n + i2n + i3n + i4n + i5n + i6n + i7n + i8n + i9n + i10n + i11n + i12n + i13n + i14n + i15n;
 //New sum
 
 	var eq = term - sum;
@@ -278,6 +293,9 @@
 	var i10 = i10n.toLocaleString('en-US');	
 	var i11 = i11n.toLocaleString('en-US');	
 	var i12 = i12n.toLocaleString('en-US');	
+	var i13 = i13n.toLocaleString('en-US');	
+	var i14 = i14n.toLocaleString('en-US');	
+	var i15 = i15n.toLocaleString('en-US');	
 	
 //New en-US
 
@@ -297,6 +315,9 @@
         document.getElementById("i10").innerHTML = i10;
         document.getElementById("i11").innerHTML = i11;
 	document.getElementById("i12").innerHTML = i12;
+	document.getElementById("i13").innerHTML = i13;
+	document.getElementById("i14").innerHTML = i14;
+	document.getElementById("i15").innerHTML = i15;
 	
 	var thName = sum;
 	var n0 = thName.toString(); // "1,000,000,000.00"
